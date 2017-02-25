@@ -11,7 +11,7 @@ $(document).on('ready', function() {
 			   var $but = $('<button>').attr('datfight',fighters[i]).text(fighters[i]);
 			   $('#mmaFighterButton').append($but);
 		  }
-	   }  
+	  }  
 
 	$(document).on('click', 'button', function() 
   {
@@ -29,7 +29,8 @@ $(document).on('ready', function() {
       .done(function(response) {
         var results = response.data;
 
-        for (var i = 0; i < results.length; i++) {
+        for (var i = 0; i < results.length; i++) 
+        {
           var gifDiv = $('<div class="item">')
           var rating = results[i].rating;
           var p = $('<p>').text("Rating: " + rating);
