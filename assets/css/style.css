@@ -1,0 +1,12 @@
+body
+{
+	padding:75px;
+	border:groove lightsteelblue 5px;
+	background: black url("background.jpg") no-repeat fixed center; 
+
+}
+
+#header
+{
+	color: white;
+}
